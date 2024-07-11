@@ -1,4 +1,4 @@
-import './StarshipSearch.css';
+import './StarshipSearch.scss';
 import { useState } from 'react';
 
 const StarshipSearch = (props) => {
@@ -12,14 +12,15 @@ const StarshipSearch = (props) => {
 
   return (
     <>
-      <h1>Star Wars API</h1>
-      <h2 className='search'>Search</h2>
+      <h1 className='secondaryHeader'>
+        {' '}
+        <span className='header'>Star Wars </span>API
+      </h1>
+      <h2 className='search'>Search Star Ships</h2>
       <form onSubmit={handleSubmit}>
-        <label className='search' htmlFor='ship'>
-          Search Term
-        </label>
         <input
           className='search'
+          placeholder='Search for Star Ship'
           id='ship'
           value={ship}
           type='text'

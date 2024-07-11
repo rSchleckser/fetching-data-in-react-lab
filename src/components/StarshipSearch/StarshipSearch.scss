@@ -1,0 +1,26 @@
+$search-main-color: #FFA500;
+$search-secondary-color: #FFFFFF;
+
+.header{
+    color: $search-main-color;
+}
+
+.secondaryHeader{
+    color: $search-secondary-color;
+    text-align: center;
+}
+.search{
+    display: flex;
+    // margin-right: 1rem;
+    justify-content: center;
+}
+
+form input#ship{
+margin-left: 40%;
+}
+
+button{
+    color: aliceblue;
+}
+
+

@@ -21,7 +21,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchDefaultData = async () => {
-      const data = await starshipService.search('fighter');
+      const data = await starshipService.search('star');
       const newStarships = data.results.map((data) => ({
         name: data.name,
         class: data.starship_class,
